@@ -1,0 +1,730 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/*Components
+===========================================================================================================================*/
+@layer components {
+    .btn {
+        @apply p-2;
+        @apply rounded-md;
+        transition: background-color 300ms, color 300ms;
+        @apply focus: ring-4;
+        @apply truncate;
+    }
+
+    .btn-black {
+        @apply bg-black;
+        @apply text-white;
+        @apply hover: bg-gray-900;
+        @apply ring-black;
+    }
+
+    .btn-white {
+        @apply bg-white;
+        @apply text-black;
+        @apply hover: bg-gray-100;
+        @apply ring-white;
+    }
+
+    .btn-dark {
+        @apply bg-gray-600;
+        @apply text-white;
+        @apply hover: bg-gray-800;
+        @apply ring-gray-300;
+    }
+
+    .btn-light {
+        @apply bg-gray-300;
+        @apply text-black;
+        @apply hover: bg-gray-500;
+        @apply ring-gray-100;
+    }
+
+    .btn-red {
+        @apply bg-red-500;
+        @apply text-black;
+        @apply hover: bg-red-700;
+        @apply ring-red-300;
+    }
+
+    .btn-yellow {
+        @apply bg-yellow-500;
+        @apply text-black;
+        @apply hover: bg-yellow-700;
+        @apply ring-yellow-300;
+    }
+
+    .btn-green {
+        @apply bg-green-500;
+        @apply text-black;
+        @apply hover: bg-green-700;
+        @apply ring-green-300;
+    }
+
+    .btn-blue {
+        @apply bg-blue-500;
+        @apply text-black;
+        @apply hover: bg-blue-700;
+        @apply ring-blue-300;
+    }
+
+    .btn-indigo {
+        @apply bg-indigo-500;
+        @apply text-black;
+        @apply hover: bg-indigo-700;
+        @apply ring-indigo-300;
+    }
+
+    .btn-purple {
+        @apply bg-purple-500;
+        @apply text-black;
+        @apply hover: bg-purple-700;
+        @apply ring-purple-300;
+    }
+
+    .btn-pink {
+        @apply bg-pink-500;
+        @apply text-black;
+        @apply hover: bg-pink-700;
+        @apply ring-pink-300;
+    }
+
+    .btn-outline-black {
+        @apply border-black;
+        @apply text-black;
+        @apply hover: bg-black;
+        @apply hover: text-white;
+        @apply border-2;
+        @apply ring-black;
+    }
+
+    .btn-outline-white {
+        @apply border-white;
+        @apply text-white;
+        @apply hover: bg-white;
+        @apply hover: text-black;
+        @apply border-2;
+        @apply ring-white;
+    }
+
+    .btn-outline-dark {
+        @apply border-gray-700;
+        @apply text-gray-700;
+        @apply hover: bg-gray-700;
+        @apply hover: text-gray-300;
+        @apply border-2;
+        @apply ring-gray-300;
+    }
+
+    .btn-outline-light {
+        @apply border-gray-300;
+        @apply text-gray-300;
+        @apply hover: bg-gray-300;
+        @apply hover: text-gray-100;
+        @apply border-2;
+        @apply ring-gray-100;
+    }
+
+    .btn-outline-red {
+        @apply border-red-700;
+        @apply text-red-700;
+        @apply hover: bg-red-700;
+        @apply hover: text-red-300;
+        @apply border-2;
+        @apply ring-red-300;
+    }
+
+    .btn-outline-yellow {
+        @apply border-yellow-700;
+        @apply text-yellow-700;
+        @apply hover: bg-yellow-700;
+        @apply hover: text-yellow-300;
+        @apply border-2;
+        @apply ring-yellow-300;
+    }
+
+    .btn-outline-green {
+        @apply border-green-700;
+        @apply text-green-700;
+        @apply hover: bg-green-700;
+        @apply hover: text-green-300;
+        @apply border-2;
+        @apply ring-green-300;
+    }
+
+    .btn-outline-blue {
+        @apply border-blue-700;
+        @apply text-blue-700;
+        @apply hover: bg-blue-700;
+        @apply hover: text-blue-300;
+        @apply border-2;
+        @apply ring-blue-300;
+    }
+
+    .btn-outline-indigo {
+        @apply border-indigo-700;
+        @apply text-indigo-700;
+        @apply hover: bg-indigo-700;
+        @apply hover: text-indigo-300;
+        @apply border-2;
+        @apply ring-indigo-300;
+    }
+
+    .btn-outline-purple {
+        @apply border-purple-700;
+        @apply text-purple-700;
+        @apply hover: bg-purple-700;
+        @apply hover: text-purple-300;
+        @apply border-2;
+        @apply ring-purple-300;
+    }
+
+    .btn-outline-pink {
+        @apply border-pink-700;
+        @apply text-pink-700;
+        @apply hover: bg-pink-700;
+        @apply hover: text-pink-300;
+        @apply border-2;
+        @apply ring-pink-300;
+    }
+
+    .btn-sm {
+        @apply p-1;
+        @apply rounded-md;
+        transition: background-color 300ms, color 300ms;
+        @apply focus: ring-4;
+    }
+
+    .btn-lg {
+        @apply p-4;
+        @apply rounded-md;
+        transition: background-color 300ms, color 300ms;
+        @apply focus: ring-4;
+    }
+
+    .btn-black[disabled] {
+        @apply bg-black;
+        @apply text-white;
+        @apply ring-black;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-white[disabled] {
+        @apply bg-white;
+        @apply text-black;
+        @apply ring-white;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-dark[disabled] {
+        @apply bg-gray-400;
+        @apply text-white;
+        @apply ring-gray-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-light[disabled] {
+        @apply bg-gray-100;
+        @apply text-black;
+        @apply ring-gray-100;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-red[disabled] {
+        @apply bg-red-300;
+        @apply text-black;
+        @apply ring-red-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-yellow[disabled] {
+        @apply bg-yellow-300;
+        @apply text-black;
+        @apply ring-yellow-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-green[disabled] {
+        @apply bg-green-300;
+        @apply text-black;
+        @apply ring-green-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-blue[disabled] {
+        @apply bg-blue-300;
+        @apply text-black;
+        @apply ring-blue-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-indigo[disabled] {
+        @apply bg-indigo-300;
+        @apply text-black;
+        @apply ring-indigo-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-purple[disabled] {
+        @apply bg-purple-300;
+        @apply text-black;
+        @apply ring-purple-300;
+        pointer-events: none;
+        cursor: not-allowed;
+        cursor: not-allowed;
+    }
+
+    .btn-pink[disabled] {
+        @apply bg-pink-500;
+        @apply text-black;
+        @apply ring-pink-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-black[disabled] {
+        @apply border-black;
+        @apply text-black;
+        @apply border-2;
+        @apply ring-black;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-white[disabled] {
+        @apply border-white;
+        @apply text-white;
+        @apply border-2;
+        @apply ring-white;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-dark[disabled] {
+        @apply border-gray-700;
+        @apply text-gray-700;
+        @apply border-2;
+        @apply ring-gray-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-light[disabled] {
+        @apply border-gray-300;
+        @apply text-gray-300;
+        @apply border-2;
+        @apply ring-gray-100;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-red[disabled] {
+        @apply border-red-700;
+        @apply text-red-700;
+        @apply border-2;
+        @apply ring-red-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-yellow[disabled] {
+        @apply border-yellow-700;
+        @apply text-yellow-700;
+        @apply border-2;
+        @apply ring-yellow-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-green[disabled] {
+        @apply border-green-700;
+        @apply text-green-700;
+        @apply border-2;
+        @apply ring-green-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-blue[disabled] {
+        @apply border-blue-700;
+        @apply text-blue-700;
+        @apply border-2;
+        @apply ring-blue-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-indigo[disabled] {
+        @apply border-indigo-700;
+        @apply text-indigo-700;
+        @apply border-2;
+        @apply ring-indigo-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-purple[disabled] {
+        @apply border-purple-700;
+        @apply text-purple-700;
+        @apply border-2;
+        @apply ring-purple-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .btn-outline-pink[disabled] {
+        @apply border-pink-700;
+        @apply text-pink-700;
+        @apply border-2;
+        @apply ring-pink-300;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .badge {
+        @apply p-1;
+        @apply rounded-lg;
+        @apply empty: invisible;
+    }
+
+    .navbar {
+        @apply p-4;
+        @apply top-0;
+        @apply flex;
+        @apply msm: block;
+        @apply mb-2;
+        @apply z-top;
+    }
+
+    .navbar-sticky {
+        @apply sticky;
+    }
+
+    .navbar>.navbar-brand {
+        @apply text-lg;
+    }
+
+    .navbar>.navbar-content {
+        @apply list-none;
+        @apply flex;
+        @apply msm: block;
+    }
+
+    .navbar>.navbar-content>.nav-link {
+        @apply ml-3;
+        @apply text-gray-700;
+        @apply hover: text-gray-900;
+        transition: color 300ms;
+    }
+
+    .navbar>.navbar-text {
+        @apply ml-auto;
+    }
+
+    .card {
+        @apply rounded-md;
+        @apply p-3;
+        @apply border-2;
+        @apply border-black;
+        @apply shadow-md;
+        @apply mb-2;
+    }
+
+    .card>.card-title {
+        @apply flex;
+        @apply text-xl;
+    }
+
+    .card>.card-seperator {
+        @apply w-full;
+        @apply border-black;
+    }
+
+    .card>.card-body {
+        @apply text-base;
+    }
+
+    .card>.card-footer {
+        @apply mt-2;
+        @apply text-gray-300;
+        @apply text-sm;
+        @apply lowercase;
+    }
+
+    .card+.card {
+        @apply ml-3;
+    }
+
+    .breadcrumb {
+        @apply list-none;
+        @apply flex;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: '/';
+        @apply mx-2;
+    }
+
+    .breadcrumb-item.active {
+        @apply underline;
+        @apply text-blue-500;
+    }
+
+    .alert {
+        @apply p-5;
+        @apply relative;
+        @apply my-2;
+        @apply rounded-md;
+        @apply shadow-inner;
+    }
+
+    .alert a {
+        @apply font-bold;
+        @apply underline;
+    }
+
+    .btn-group {
+        @apply relative;
+        @apply flex;
+    }
+
+    .btn-group .btn,
+    .btn-group .btn-sm,
+    .btn-group .btn-lg {
+        @apply rounded-none;
+        @apply m-0;
+    }
+
+    .btn-group .btn:first-child,
+    .btn-group .btn-sm:first-child,
+    .btn-group .btn-lg:first-child {
+        @apply rounded-l-md;
+        @apply m-0;
+    }
+
+    .btn-group .btn:last-child,
+    .btn-group .btn-sm:last-child,
+    .btn-group .btn-lg:last-child {
+        @apply rounded-r-md;
+        @apply m-0;
+    }
+
+    .list-group {
+        @apply border-2;
+        @apply rounded-md;
+        @apply list-none;
+        @apply w-full;
+        @apply border-black;
+        @apply mr-2;
+    }
+
+    .list-group-flush {
+        @apply list-none;
+        @apply w-full;
+    }
+
+    .list-group>.list-group-item,
+    .list-group-flush>.list-group-item {
+        @apply border-b-1;
+        @apply border-black;
+    }
+
+    .list-group>.list-group-item:last-child,
+    .list-group-flush>.list-group-item:last-child {
+        @apply border-none;
+    }
+
+    .list-group>.list-group-item.list-group-item-active,
+    .list-group-flush>.list-group-item.list-group-item-active {
+        @apply bg-blue-500;
+    }
+
+    .progress {
+        @apply bg-gray-100;
+        @apply rounded-md;
+        @apply h-6;
+        @apply my-4;
+    }
+
+    .progress-bar {
+        @apply bg-blue-500;
+        @apply rounded-md;
+        @apply h-6;
+    }
+
+    @keyframes spinner {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spinner-grow {
+        0% {
+            transform: scale(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .spinner {
+        @apply border-current;
+        @apply border-4;
+        animation: spinner .75s infinite;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: -.125em;
+        border-radius: 50%;
+        border-right-color: transparent;
+    }
+
+
+    .spinner-grow {
+        @apply border-4;
+        animation: spinner-grow .75s infinite;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: -.125em;
+        border-radius: 50%;
+    }
+
+    .modal:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .modal:target:before {
+        display: block;
+    }
+
+    .modal:target .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+    }
+
+    .modal-dialog {
+        background: #fefefe;
+        border: #333 solid 1px;
+        border-radius: 5px;
+        margin-left: -200px;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 11;
+        width: 360px;
+        -webkit-transform: translate(0, -500%);
+        -ms-transform: translate(0, -500%);
+        transform: translate(0, -500%);
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-header,
+    .modal-footer {
+        padding: 10px 20px;
+    }
+
+    .modal-header {
+        border-bottom: #eee solid 1px;
+        display: flex;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal-footer {
+        border-top: #eee solid 1px;
+        text-align: right;
+    }
+
+    .modal-close {
+        margin-left: auto;
+    }
+
+    .article {
+        @apply ml-3;
+    }
+
+    .article>.article-title {
+        @apply text-3xl;
+        @apply font-bold;
+    }
+
+    .article>.article-lead {
+        @apply text-sm;
+        @apply font-light;
+    }
+
+    .article>.article-body {
+        @apply text-base;
+    }
+
+    .input,
+    .textarea {
+        @apply border-1;
+        @apply border-black;
+        @apply rounded-md;
+        @apply focus: ring-4;
+        @apply focus: ring-blue-300;
+        @apply ring-offset-0;
+    }
+
+    .input:focus:not(:focus-visible)+label,
+    .textarea:focus:not(:focus-visible)+label {
+        outline: 2px dotted transparent;
+    }
+
+    .input-outline {
+        @apply  !ring-0;
+        @apply  !ring-offset-0;
+        @apply  !border-0;
+        @apply  !outline-none;
+        @apply outline-none;
+        @apply  !border-b-[.23rem];
+        @apply  !border-b-gray-300;
+        @apply focus:  !border-b-blue-300;
+        @apply rounded-none;
+    }
+
+
+}
+
+/*Utilities
+===========================================================================================================================*/
+@layer utilities {
+
+    /*IMAGES*/
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}

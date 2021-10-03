@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostCSS</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="GhostCSS - power your designs with the next generation of CSS." />
+</head>
+
+<body class="bg-red-500">
+    <div class="navbar bg-yellow-500">
+        <h1 class="navbar-brand">GhostCSS</h1>
+        <ul class="navbar-content !text-gray-400">
+            <li class="nav-link !hover:text-white"><a href="#" class="text-black">Home</a></li>
+            <li class="nav-link !hover:text-white"><a href="./docs/index.html">Docs</a></li>
+            <li class="nav-link !hover:text-white"><a href="./examples/index.html">Examples</a></li>
+            <a href="./docs/getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
+        </ul>
+    </div>
+    <div class="flex msm:block ml-5 mb-10">
+        <div>
+            <h1 class="text-7xl mb-2">GhostCSS</h1>
+            <p class="text-4xl text-gray-700 mb-10">Build responsive and good-looking sites without ever leaving your
+                HTML with GhostCSS, the next generation of css.</p>
+            <a href="./docs/getting-started.html"><button class="btn-lg btn-green mr-8">Get Started</button></a>
+            <a href="./examples/index.html"><button class="btn-lg btn-outline-dark">Examples</button></a>
+        </div>
+        <img src="./logo.png" alt="" class="img-responsive">
+    </div>
+    <div class="flex msm:block mr-5 mb-10">
+        <code class="bg-gray-600 text-blue-400 mr-10 ml-10 rounded-md">
+            &lt;div class="flex sm:block"&gt;
+            <br>
+            &nbsp; &lt;h1 class="text-4xl sm:text-2xl"&gt;Responsive layouts are so easy!&lt;/h1&gt;
+            <br>
+            &nbsp; &lt;p&gt;lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+            <br>
+            &lt;/div&gt;
+        </code>
+        <div>
+            <h1 class="text-4xl mb-2">It's responsive</h1>
+            <p class="text-1xl text-gray-700 mb-10">Worried about mobiles? Just chuck in an sm: or lg: behind any class
+                and we will take care of it.</p>
+            <a href="https://tailwindcss.com/docs/responsive-design"><button class="btn-lg btn-yellow mr-8">Learn
+                    More</button></a>
+        </div>
+    </div>
+    <div class="flex msm:block ml-5 mb-10">
+        <div>
+            <h1 class="text-4xl mb-2">Great Color Pallete</h1>
+            <p class="text-1xl text-gray-700 mb-10 text-opacity-75">GhostCSS has a great color pallete. even with the
+                same layout you can add
+                different colors and make it look better.</p>
+            <a href="https://tailwindcss.com/docs/customizing-colors"><button class="btn-lg btn-purple mr-8">Learn
+                    More</button></a>
+        </div>
+        <code class="bg-gray-600 text-blue-400 mr-10 ml-10 rounded-md">
+                &lt;div class="bg-purple-400"&gt;
+                <br>
+                &nbsp; &lt;h1 class="text-4xl text-green-500"&gt;Colors are cool!&lt;/h1&gt;
+                <br>
+                &nbsp; &lt;p class="text-green-300"&gt;lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+                <br>
+                &lt;/div&gt;
+        </code>
+    </div>
+    <div class="flex msm:block mr-5 mb-10">
+        <code class="bg-gray-600 text-blue-400 mr-10 ml-10 rounded-md">
+            &lt;div class="bg-purple-400"&gt;
+            <br>
+            &nbsp; &lt;h1 class="bg-green-500 hover:bg-green-700"&gt;States!&lt;/h1&gt;
+            <br>
+            &nbsp; &lt;p class="text-green-300"&gt;lorem ipsum dolor sit amet, consectetur adipisicing elit &lt;a class="text-yellow-800 hover:text-yellow-900 hover:translate-y-8"&gt;lorem&lt;/a&gt; &lt;/p&gt;
+            <br>
+            &lt;/div&gt;
+        </code>
+        <div>
+            <h1 class="text-4xl mb-2">We got states</h1>
+            <p class="text-1xl text-gray-700 mb-10">Want to style something on focus or hover? just stick hover: or
+                focus: behind any class and watch the magic happen. We even have custom states like group-hover and
+                stuff like empty and marker.</p>
+            <a href="https://tailwindcss.com/docs/hover-focus-and-other-states"><button
+                    class="btn-lg btn-pink mr-8">Learn More</button></a>
+        </div>
+    </div>
+    <div class="flex msm:block ml-5 mb-10">
+        <div>
+            <h1 class="text-4xl mb-2">Dark Mode</h1>
+            <p class="text-1xl text-gray-700 mb-10">Don't want to blind your users when they open your website at 3AM?
+                Enable dark mode and add dark: behind any class and solve the problem!</p>
+            <a href="https://tailwindcss.com/docs/dark-mode"><button class="btn-lg btn-indigo mr-8">Learn
+                    More</button></a>
+        </div>
+        <code class="bg-gray-600 text-blue-400 mr-10 ml-10 rounded-md">
+            &lt;div class="bg-gray-400 dark:bg-gray-800"&gt;
+            <br>
+            &nbsp; &lt;h1 class="text-black dark:text-white"&gt;Dark mode!&lt;/h1&gt;
+            <br>
+            &nbsp; &lt;p class="text-gray-200 dark:text-gray-600"&gt;lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+            <br>
+            &lt;/div&gt;
+        </code>
+    </div>
+    <div class="flex msm:block mr-5 mb-10">
+        <code class="bg-gray-600 text-blue-400 mr-10 ml-10 rounded-md">
+                &lt;div class="card"&gt;
+                <br>
+                &nbsp; &lt;button class="btn btn-outline-red"&gt;Components!&lt;/h1&gt;
+                <br>
+                &nbsp; &lt;p class="card-body"&gt;lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+                <br>
+                &lt;/div&gt;
+            </code>
+        <div>
+            <h1 class="text-4xl mb-2">Components</h1>
+            <p class="text-1xl text-gray-700 mb-10">Want to avoid the hard work and get good looking components? Just
+                add classes like btn and navbar to anything and we will style it for you!</p>
+            <a href="./docs/index.html"><button class="btn-lg btn-light mr-8">Learn More</button></a>
+        </div>
+    </div>
+    <div class="mb-10 mx-10 text-center">
+        <h1 class="text-6xl mb-2">The best part, it's free</h1>
+        <p class="text-3xl text-gray-700 mb-10">You don't need to pay for ghostCSS. It is completely free and has no
+            paid parts.</p>
+    </div>
+    <p class="text-center">Doesn't that convince you to use ghostCSS?</p>
+    <br><br><br>
+</body>
+
+</html>
