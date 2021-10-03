@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards - GhostCSS docs</title>
+    <link rel="stylesheet" href="../index.css">
+    <meta name="description" content="Learn how to use cards with GhostCSS, the next generation of CSS">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+</head>
+
+<body>
+    <div class="navbar bg-yellow-500">
+        <h1 class="navbar-brand">GhostCSS</h1>
+        <ul class="navbar-content !text-gray-400">
+            <li class="nav-link !hover:text-white"><a href="../App.html">Home</a></li>
+            <li class="nav-link !hover:text-white"><a href="./index.html" class="text-black">Docs</a></li>
+            <li class="nav-link !hover:text-white"><a href="../examples/index.html">Examples</a></li>
+            <a href="./getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
+        </ul>
+    </div>
+    <h1 class="text-3xl">Cards</h1>
+    <p class="text-gray-400">GhostCSS has great card designs. Lets look at them:</p>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="text-2xl">Title</h1>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ex repudiandae explicabo! Inventore
+                harum quibusdam accusantium perferendis neque maiores nisi distinctio dolorem reprehenderit aperiam,
+                quia animi! Vel eos reiciendis corporis.</p>
+        </div>
+        <div class="card-footer">
+            <p>By name, 3 months ago</p>
+        </div>
+    </div>
+    <code class="bg-gray-600 text-blue-400 rounded-md block mt-3">
+        &lt;div class="card">
+        <br>
+            &lt;div class="card-header">
+            <br>
+                &lt;h1 class="text-2xl">Title&lt;/h1>
+                <br>
+            &lt;/div>
+            <br>
+            &lt;div class="card-body">
+            <br>
+                &lt;p>Lorem ipsum...&lt;/p>
+                <br>
+            &lt;/div>
+            <br>
+            &lt;div class="card-footer">
+            <br>
+                &lt;p>By name, 3 months ago&lt;/p>
+                <br>
+            &lt;/div>
+            <br>
+        &lt;/div>
+        <br>
+    </code>
+    <h1 class="text-2xl">Stacking</h1>
+    <p class="text-gray-400">GhostCSS will make cards automatically like this:</p>
+    <div class="flex">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="text-2xl">Title</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ex repudiandae explicabo!
+                    Inventore harum
+                    quibusdam accusantium perferendis neque maiores nisi distinctio dolorem reprehenderit aperiam, quia
+                    animi!
+                    Vel eos reiciendis corporis.</p>
+            </div>
+            <div class="card-footer">
+                <p>By name, 3 months ago</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1 class="text-2xl">Title</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ex repudiandae explicabo!
+                    Inventore harum
+                    quibusdam accusantium perferendis neque maiores nisi distinctio dolorem reprehenderit aperiam, quia
+                    animi!
+                    Vel eos reiciendis corporis.</p>
+            </div>
+            <div class="card-footer">
+                <p>By name, 3 months ago</p>
+            </div>
+        </div>
+    </div>
+    <code class="bg-gray-600 text-blue-400 rounded-md block mt-3">
+            &lt;div class="flex">
+            <br>
+            &lt;div class="card">
+            <br>
+                &lt;div class="card-header">
+                <br>
+                    &lt;h1 class="text-2xl">Title&lt;/h1>
+                    <br>
+                &lt;/div>
+                <br>
+                &lt;div class="card-body">
+                <br>
+                    &lt;p>Lorem ipsum...&lt;/p>
+                    <br>
+                &lt;/div>
+                <br>
+                &lt;div class="card-footer">
+                <br>
+                    &lt;p>By name, 3 months ago&lt;/p>
+                    <br>
+                &lt;/div>
+                <br>
+            &lt;/div>
+            <br>
+            &lt;div class="card">
+            <br>
+            &lt;div class="card-header">
+            <br>
+            &lt;h1 class="text-2xl">Title&lt;/h1>
+            <br>
+            &lt;/div>
+            <br>
+            &lt;div class="card-body">
+            <br>
+            &lt;p>Lorem ipsum...&lt;/p>
+            <br>
+            &lt;/div>
+            <br>
+            &lt;div class="card-footer">
+            <br>
+            &lt;p>By name, 3 months ago&lt;/p>
+            <br>
+            &lt;/div>
+            <br>
+            &lt;/div>
+            <br>
+            &lt;/div;
+            <br>
+        </code>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges - GhostCSS docs</title>
+    <link rel="stylesheet" href="../index.css">
+    <meta name="description" content="Learn how to use badges with GhostCSS, the next generation of CSS">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+</head>
+
+<body>
+    <div class="navbar bg-yellow-500">
+        <h1 class="navbar-brand">GhostCSS</h1>
+        <ul class="navbar-content !text-gray-400">
+            <li class="nav-link !hover:text-white"><a href="../App.html">Home</a></li>
+            <li class="nav-link !hover:text-white"><a href="./index.html" class="text-black">Docs</a></li>
+            <li class="nav-link !hover:text-white"><a href="../examples/index.html">Examples</a></li>
+            <a href="./getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
+        </ul>
+    </div>
+    <h1 class="text-3xl">Badges</h1>
+    <p class="text-gray-400">GhostCSS Provides designs for badges. Let's look at them:</p>
+    <button class="btn btn-blue">Notifications<span class="badge bg-red-500 mx-2">1</span></button>
+    <code class="bg-gray-600 text-blue-400 rounded-md block mt-5">
+        &lt;button class="btn btn-blue">Notifications&lt;span class="badge bg-red-500 mx-2">1&lt;/span>&lt;/button>
+    </code>
+    <h1 class="text-2xl">Collapsing</h1>
+    <p class="text-gray-400">If a badge is empty, it collapses like this:</p>
+    <button class="btn btn-blue">Notifications<span class="badge bg-red-500 mx-2">1</span></button>
+    <button class="btn btn-blue">Notifications<span class="badge bg-red-500 mx-2"></span></button>
+    <code class="bg-gray-600 text-blue-400 rounded-md block mt-5">
+            &lt;button class="btn btn-blue">Notifications&lt;span class="badge bg-red-500 mx-2">1&lt;/span>&lt;/button>
+            <br>
+            &lt;button class="btn btn-blue">Notifications&lt;span class="badge bg-red-500 mx-2">&lt;/span>&lt;/button>
+        </code>
+</body>
+
+</html>

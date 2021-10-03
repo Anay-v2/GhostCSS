@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Groups - GhostCSS docs</title>
+    <link rel="stylesheet" href="../index.css">
+    <meta name="description" content="Learn how to use button groups with GhostCSS, the next generation of CSS">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+</head>
+
+<body>
+    <div class="navbar bg-yellow-500">
+        <h1 class="navbar-brand">GhostCSS</h1>
+        <ul class="navbar-content !text-gray-400">
+            <li class="nav-link !hover:text-white"><a href="../App.html">Home</a></li>
+            <li class="nav-link !hover:text-white"><a href="./index.html" class="text-black">Docs</a></li>
+            <li class="nav-link !hover:text-white"><a href="../examples/index.html">Examples</a></li>
+            <a href="./getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
+        </ul>
+    </div>
+    <h1 class="text-3xl">Button Groups</h1>
+    <p class="text-gray-400 mb-3">GhostCSS has great looking button groups that can be customized. Let's take a look at
+        them:</p>
+    <div class="btn-group">
+        <button class="btn btn-red">foo</button>
+        <button class="btn btn-outline-red">bar</button>
+        <button class="btn btn-red">baz</button>
+    </div>
+    <code class="bg-gray-600 text-blue-400 block rounded-md mt-3">
+            &lt;div class="btn-group">
+            <br>
+                &lt;button class="btn btn-red">foo&lt;/button>
+                <br>
+                &lt;button class="btn btn-outline-red">bar&lt;/button>
+                <br>
+                &lt;button class="btn btn-red">baz&lt;/button>
+                <br>
+            &lt;/div>
+            <br>
+        </code>
+    <h1 class="text-2xl">Sizes</h1>
+    <p class="text-gray-400 mb-3">GhostCSS automatically changes the sizes of other buttons if one button's size is
+        changed:</p>
+    <div class="btn-group">
+        <button class="btn btn-red">foo</button>
+        <button class="btn-lg btn-outline-red">bar</button>
+        <button class="btn btn-red">baz</button>
+    </div>
+    <code class="bg-gray-600 text-blue-400 block rounded-md mt-3">
+                    &lt;div class="btn-group">
+                    <br>
+                        &lt;button class="btn btn-red">foo&lt;/button>
+                        <br>
+                        &lt;button class="btn-lg btn-outline-red">bar&lt;/button>
+                        <br>
+                        &lt;button class="btn btn-red">baz&lt;/button>
+                        <br>
+                    &lt;/div>
+                    <br>
+        </code>
+</body>
+
+</html>
