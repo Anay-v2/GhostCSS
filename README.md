@@ -56,12 +56,12 @@ plugins: [],
 }
 ```
 
-paste https://ghostcss.netlify.app/tailwind.css in `index.css`
+paste [this](https://ghostcss.netlify.app/tailwind.css) in `index.css`
 
 ```
 npm run dev
 ```
 Now your site is running!
 
-<a href="https://ghostcss.netlify.app/docs/index.html">Docs</a>
+[Docs](https://ghostcss.netlify.app/docs)
 
