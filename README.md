@@ -7,23 +7,23 @@ https://ghostcss.netlify.app
 
 ## Installation
 
-Create a new vite app
+1. Create a new vite app
 ```
 $ npm init vite my-ghost-project
 ```
 
-Install dependencies
+2. Install dependencies
 ```
 $ cd my-ghost-project
 $ npm install -D postcss tailwindcss autoprefixer
 ```
 
-Create config
+3. Create config
 ```
 npx tailwindcss init -p
 ```
 
-Paste this in `postcss.config.js`
+4. Paste this in `tailwind.config.js`
 ```javascript
 module.exports = {
 mode: 'jit',
