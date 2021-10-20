@@ -1,5 +1,14 @@
 # GhostCSS
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7643a1ba-a4c3-4620-993b-522ae3e40282/deploy-status)](https://app.netlify.com/sites/ghostcss/deploys)
+![Forks](https://img.shields.io/github/forks/anay-v2/GhostCSS?style=social)
+![Stars](https://img.shields.io/github/stars/anay-v2/GhostCSS?style=social)
+![Watchers](https://img.shields.io/github/watchers/anay-v2/GhostCSS?style=social)
+![Issues](https://img.shields.io/github/issues-raw/anay-v2/GhostCSS)
+![PRs'](https://img.shields.io/github/issues-pr-raw/anay-v2/GhostCSS)
+![Last Commit](https://img.shields.io/github/last-commit/anay-v2/GhostCSS)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/anay-v2/GhostCSS)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=site&up_color=green&up_message=working&url=https%3A%2F%2Fghostcss.netlify.app)
+
 
 Build complex ui's and ux's using ghostCSS, the next generation of css.
 
