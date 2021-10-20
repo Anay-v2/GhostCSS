@@ -36,7 +36,7 @@ npx tailwindcss init -p
 ```javascript
 module.exports = {
   mode: 'jit',
-  purge: ['./src/index.html', './src/*.{html,htm}', './src/docs/*.{html,htm}', './src/examples/*.{html,htm}', './src/ui/*.{html,htm}'],
+  purge: ['./src/index.html', './src/*.{html,htm}', './src/**/*.{html,htm}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
