@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'We noticed that you are contributing to ghostcss for the first time. Consider reading the github guidlines for rules.'
+        pr-message: 'We noticed that you are contributing to ghostcss for the first time. Consider reading the github guidlines for rules.'
