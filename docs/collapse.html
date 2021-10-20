@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Groups - GhostCSS docs</title>
-    <link rel="stylesheet" href="sidebar.css">
+    <title>Collapse - GhostCSS docs</title>
     <link rel="stylesheet" href="../index.css">
-    <meta name="description" content="Learn how to use button groups with GhostCSS, the next generation of CSS">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+    <script src="../index.js" defer></script>
+    <link rel="stylesheet" href="sidebar.css">
+    <meta name="description" content="Learn how to use the collapse with GhostCSS, the next generation of CSS">
+    <meta http-equiv="Content-Security-Policy" content="img-src https://*; child-src 'none';">
 </head>
+
 <body>
     <div class="navbar bg-yellow-500">
         <h1 class="navbar-brand">GhostCSS</h1>
@@ -32,57 +35,45 @@
                     <li><a href="cards.html" class="btn">Cards</a></li>
                     <li><a href="breadcrumbs.html" class="btn">Breadcrumbs</a></li>
                     <li><a href="alerts.html" class="btn">Alerts</a></li>
-                    <li><a href="btn-groups.html" class="btn active">Button Groups</a></li>
+                    <li><a href="btn-groups.html" class="btn">Button Groups</a></li>
                     <li><a href="list-groups.html" class="btn">List Groups</a></li>
                     <li><a href="progress.html" class="btn">Progress</a></li>
                     <li><a href="spinners.html" class="btn">Spinners</a></li>
                     <li><a href="modal.html" class="btn">Modal</a></li>
                     <li><a href="articles.html" class="btn">Articles</a></li>
                     <li><a href="forms.html" class="btn">Forms</a></li>
-                    <li><a href="collapse.html" class="btn">Collapse</a></li>
+                    <li><a href="collapse.html" class="btn active">Collapse</a></li>
                 </ul>
             </nav>
         </aside>
         <div>
-    <h1 class="text-3xl">Button Groups</h1>
-    <p class="text-gray-400 mb-3">GhostCSS has great looking button groups that can be customized. Let's take a look at them:</p>
-    <div class="btn-group">
-        <button class="btn btn-red">foo</button>
-        <button class="btn btn-outline-red">bar</button>
-        <button class="btn btn-red">baz</button>
+            <h1 class="text-3xl">Collapse</h1>
+            <p class="text-gray-400">GhostCSS has great collapse scripts. Let's take a look at them: </p>
+            <button class="btn btn-red" data-gh-toggle="collapse" data-gh-target="#collapse-example">Click Me</button>
+            <div class="collapse" id="collapse-example" data-gh-dis="block" style="display: none;">
+                <p>Yay!</p>
+            </div>
+            <code class="bg-gray-600 text-blue-400 rounded-md block mt-3">
+        &lt;button class="btn btn-red" data-gh-toggle="collapse" data-gh-target="#collapse-example">Click Me&lt;/button>
+        <br>
+        &lt;div class="collapse" id="collapse-example" data-gh-dis="block" style="display: none;">
+        <br>
+            &lt;p>Yay!&lt;/p>
+            <br>
+        &lt;/div>
+        <br>
+    </code>
+            <h1 class="text-2xl">No chevron</h1>
+            <p class="text-gray-400">You can add the <code>collapse-no-chevron</code> class to remove the chevron: </p>
+            <button class="btn btn-red collapse-no-chevron" data-gh-toggle="collapse" data-gh-target="#collapse-example2">Click Me</button>
+            <div class="collapse" id="collapse-example2" data-gh-dis="block" style="display: none;">
+                <p>Yay!</p>
+            </div>
+            <code class="bg-gray-600 text-blue-400 rounded-md block mt-3">
+            
+        </code>
+        </div>
     </div>
-        <code class="bg-gray-600 text-blue-400 block rounded-md mt-3">
-            &lt;div class="btn-group">
-            <br>
-                &lt;button class="btn btn-red">foo&lt;/button>
-                <br>
-                &lt;button class="btn btn-outline-red">bar&lt;/button>
-                <br>
-                &lt;button class="btn btn-red">baz&lt;/button>
-                <br>
-            &lt;/div>
-            <br>
-        </code>
-        <h1 class="text-2xl">Sizes</h1>
-        <p class="text-gray-400 mb-3">GhostCSS automatically changes the sizes of other buttons if one button's size is changed:</p>
-        <div class="btn-group">
-            <button class="btn btn-red">foo</button>
-            <button class="btn-lg btn-outline-red">bar</button>
-            <button class="btn btn-red">baz</button>
-        </div>
-        <code class="bg-gray-600 text-blue-400 block rounded-md mt-3">
-                    &lt;div class="btn-group">
-                    <br>
-                        &lt;button class="btn btn-red">foo&lt;/button>
-                        <br>
-                        &lt;button class="btn-lg btn-outline-red">bar&lt;/button>
-                        <br>
-                        &lt;button class="btn btn-red">baz&lt;/button>
-                        <br>
-                    &lt;/div>
-                    <br>
-        </code>
-        </div>
-        </div>
 </body>
+
 </html>

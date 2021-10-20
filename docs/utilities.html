@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilities - GhostCSS docs</title>
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="sidebar.css">
     <meta name="description" content="Learn how to use utilities with GhostCSS, the next generation of CSS">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
 </head>
-
 <body>
     <div class="navbar bg-yellow-500">
         <h1 class="navbar-brand">GhostCSS</h1>
@@ -21,10 +20,33 @@
             <a href="./getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
         </ul>
     </div>
+    <div class="flex gap-x-20">
+        <aside class="sidebar h-screen">
+            <nav class="links" aria-label="Docs navigation">
+                <ul>
+                    <li><a href="getting-started.html" class="btn">Getting Started</a></li>
+                    <li><a href="utilities.html" class="btn active">Utilities</a></li>
+                    <li><a href="buttons.html" class="btn">Buttons</a></li>
+                    <li><a href="badges.html" class="btn">Badges</a></li>
+                    <li><a href="navbar.html" class="btn">Navbar</a></li>
+                    <li><a href="cards.html" class="btn">Cards</a></li>
+                    <li><a href="breadcrumbs.html" class="btn">Breadcrumbs</a></li>
+                    <li><a href="alerts.html" class="btn">Alerts</a></li>
+                    <li><a href="btn-groups.html" class="btn">Button Groups</a></li>
+                    <li><a href="list-groups.html" class="btn">List Groups</a></li>
+                    <li><a href="progress.html" class="btn">Progress</a></li>
+                    <li><a href="spinners.html" class="btn">Spinners</a></li>
+                    <li><a href="modal.html" class="btn">Modal</a></li>
+                    <li><a href="articles.html" class="btn">Articles</a></li>
+                    <li><a href="forms.html" class="btn">Forms</a></li>
+                    <li><a href="collapse.html" class="btn">Collapse</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div>
     <h1 class="text-3xl">Utilities</h1>
-    <p class="text-gray-400">GhostCSS is based on TailwindCSS. You need basic knowledge of tailwindcss to use ghostCSS.
-        You can start reading the tailwind docs <a href="https://www.tailwindcss.com/docs" target="_blank"
-            style="text-decoration: underline;">here</a>.</p>
+    <p class="text-gray-400">GhostCSS is based on TailwindCSS. You need basic knowledge of tailwindcss to use ghostCSS. You can start reading the tailwind docs <a href="https://www.tailwindcss.com/docs" target="_blank" class="underline text-black">here</a>.</p>
+    </div>
+    </div>
 </body>
-
 </html>
