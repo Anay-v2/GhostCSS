@@ -112,6 +112,8 @@ module.exports = {
 
 paste [this](https://ghostcss.netlify.app/tailwind.css) in `index.css`
 
+(optional) paste [this](https://ghostcss.netlify.app/index.js) in `index.js`
+
 ```
 npm run dev
 ```
