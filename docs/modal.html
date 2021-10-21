@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal - GhostCSS docs</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <meta name="description" content="Learn how to use modals with GhostCSS, the next generation of CSS">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+</head>
+<body>
+    <div class="navbar bg-yellow-500">
+        <h1 class="navbar-brand">GhostCSS</h1>
+        <ul class="navbar-content !text-gray-400">
+            <li class="nav-link !hover:text-white"><a href="../App.html">Home</a></li>
+            <li class="nav-link !hover:text-white"><a href="./index.html" class="text-black">Docs</a></li>
+            <li class="nav-link !hover:text-white"><a href="../examples/index.html">Examples</a></li>
+            <a href="./getting-started.html"><button class="btn-sm btn-outline-green ml-2">Download</button></a>
+        </ul>
+    </div>
+    <div class="flex gap-x-20">
+        <aside class="sidebar h-screen">
+            <nav class="links" aria-label="Docs navigation">
+                <ul>
+                    <li><a href="getting-started.html" class="btn">Getting Started</a></li>
+                    <li><a href="utilities.html" class="btn">Utilities</a></li>
+                    <li><a href="buttons.html" class="btn">Buttons</a></li>
+                    <li><a href="badges.html" class="btn">Badges</a></li>
+                    <li><a href="navbar.html" class="btn">Navbar</a></li>
+                    <li><a href="cards.html" class="btn">Cards</a></li>
+                    <li><a href="breadcrumbs.html" class="btn">Breadcrumbs</a></li>
+                    <li><a href="alerts.html" class="btn">Alerts</a></li>
+                    <li><a href="btn-groups.html" class="btn">Button Groups</a></li>
+                    <li><a href="list-groups.html" class="btn">List Groups</a></li>
+                    <li><a href="progress.html" class="btn">Progress</a></li>
+                    <li><a href="spinners.html" class="btn">Spinners</a></li>
+                    <li><a href="modal.html" class="btn active">Modal</a></li>
+                    <li><a href="articles.html" class="btn">Articles</a></li>
+                    <li><a href="forms.html" class="btn">Forms</a></li>
+                    <li><a href="collapse.html" class="btn">Collapse</a></li>
+                    <li><a href="colors.html" class="btn">Colors</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div>
+    <h1 class="text-4xl">Modal</h1>
+    <p class="text-gray-400">GhostCSS provides a great style for modals. Let's take a look at them:</p>
+    <a href="#modal"><button class="btn btn-purple">Open Modal</button></a>
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                Modal
+                <a href="#" class="ml-auto">&times;</a>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis dolorum nesciunt dolor assumenda dolorem atque soluta tenetur obcaecati, voluptatem quod dignissimos laborum rerum at. Vero atque corrupti natus accusamus.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#"><button class="btn btn-blue">Nice!</button></a>
+            </div>
+        </div>
+    </div>
+    <code class="bg-gray-600 text-blue-400 rounded-md block mt-3">
+        &lt;a href="#modal">&lt;button class="btn btn-purple">Open Modal&lt;/button>&lt;/a>
+        <br>
+        &lt;div class="modal" id="modal">
+        <br>
+            &lt;div class="modal-dialog">
+            <br>
+                &lt;div class="modal-header">
+                <br>
+                    Modal
+                    <br>
+                    &lt;a href="#" class="ml-auto">&times;&lt;/a>
+                    <br>
+                &lt;/div>
+                <br>
+                &lt;div class="modal-body">
+                <br>
+                    &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis dolorum nesciunt dolor
+                    <br>
+                        assumenda dolorem atque soluta tenetur obcaecati, voluptatem quod dignissimos laborum rerum at. Vero
+                        <br>
+                        atque corrupti natus accusamus.&lt;/p>
+                        <br>
+                &lt;/div>
+                <br>
+                &lt;div class="modal-footer">
+                <br>
+                    &lt;a href="#">&lt;button class="btn btn-blue">Nice!&lt;/button>&lt;/a>
+                    <br>
+                &lt;/div>
+                <br>
+            &lt;/div>
+            <br>
+        &lt;/div>
+        <br>
+    </code>
+    </div>
+    </div>
+</body>
+</html>
