@@ -1,4 +1,5 @@
 # GhostCSS
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7643a1ba-a4c3-4620-993b-522ae3e40282/deploy-status)](https://app.netlify.com/sites/ghostcss/deploys)
 ![Forks](https://img.shields.io/github/forks/anay-v2/GhostCSS?style=social)
 ![Stars](https://img.shields.io/github/stars/anay-v2/GhostCSS?style=social)
@@ -9,30 +10,33 @@
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/anay-v2/GhostCSS)
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=site&up_color=green&up_message=working&url=https%3A%2F%2Fghostcss.netlify.app)
 
-
 Build complex ui's and ux's using ghostCSS, the next generation of css.
 
-https://ghostcss.netlify.app
+[https://ghostcss.netlify.app](https://ghostcss.netlify.app)
 
 ## Installation
 
 1. Create a new vite app
+
 ```
 $ npm init vite my-ghost-project
 ```
 
 2. Install dependencies
+
 ```
 $ cd my-ghost-project
 $ npm install -D postcss tailwindcss autoprefixer
 ```
 
 3. Create config
+
 ```
-npx tailwindcss init -p
+$ npx tailwindcss init -p
 ```
 
 4. Paste this in `tailwind.config.js`
+
 ```javascript
 module.exports = {
   mode: 'jit',
@@ -112,12 +116,12 @@ module.exports = {
 
 paste [this](https://ghostcss.netlify.app/tailwind.css) in `index.css`
 
-(optional) paste [this](https://ghostcss.netlify.app/index.js) in `index.js`
+*(optional)* paste [this](https://ghostcss.netlify.app/index.js) in `index.js`
 
 ```
-npm run dev
+$ npm run dev
 ```
+
 Now your site is running!
 
 [Docs](https://ghostcss.netlify.app/docs)
-
