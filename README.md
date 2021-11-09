@@ -18,20 +18,20 @@ Build complex ui's and ux's using ghostCSS, the next generation of css.
 
 1. Create a new vite app
 
-```
+```sh
 $ npm init vite my-ghost-project
 ```
 
 2. Install dependencies
 
-```
+```sh
 $ cd my-ghost-project
 $ npm install -D postcss tailwindcss autoprefixer
 ```
 
 3. Create config
 
-```
+```sh
 $ npx tailwindcss init -p
 ```
 
@@ -118,7 +118,7 @@ paste [this](https://ghostcss.netlify.app/tailwind.css) in `index.css`
 
 *(optional)* paste [this](https://ghostcss.netlify.app/index.js) in `index.js`
 
-```
+```sh
 $ npm run dev
 ```
 
